@@ -1,9 +1,10 @@
-module github.com/cuhsat/bootkey
+module github.com/f0x4n6/bootkey
 
-go 1.25
+go 1.26
 
 require (
-	github.com/davecgh/go-spew v1.1.1 // indirect
-	golang.org/x/text v0.33.0 // indirect
-	www.velocidex.com/golang/regparser v0.0.0-20250203141505-31e704a67ef7 // indirect
+	golang.org/x/text v0.35.0
+	www.velocidex.com/golang/regparser v0.0.0-20250203141505-31e704a67ef7
 )
+
+require github.com/davecgh/go-spew v1.1.1 // indirect
