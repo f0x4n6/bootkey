@@ -1,4 +1,4 @@
-module github.com/f0x4n6/bootkey
+module go.foxforensics.dev/bootkey
 
 go 1.26
 

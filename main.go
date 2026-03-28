@@ -96,7 +96,7 @@ func extract(path string) (key []byte, err error) {
 
 func main() {
 	if len(os.Args) == 1 || os.Args[1] == "--help" {
-		_, _ = fmt.Fprintln(os.Stderr, "usage: bootkey SYSTEM")
+		_, _ = fmt.Fprintln(os.Stderr, "usage: bootkey system")
 		os.Exit(2)
 	}
 
