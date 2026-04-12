@@ -1,12 +1,11 @@
 package bootkey
 
 import (
-	"encoding/hex"
 	"path/filepath"
 	"testing"
 )
 
-const bk = "13d20976d63ea5e836036ec8bc68d6eb"
+const bk = "\x13\xD2\x09\x76\xD6\x3E\xA5\xE8\x36\x03\x6E\xC8\xBC\x68\xD6\xEB"
 
 var path = filepath.Join("testdata", "SYSTEM")
 
@@ -18,7 +17,7 @@ func TestReadFile(t *testing.T) {
 			t.Fatalf("ReadFile: %v", err)
 		}
 
-		if hex.EncodeToString(key) != bk {
+		if string(key) != bk {
 			t.Fatal("bootkey invalid")
 		}
 	})
