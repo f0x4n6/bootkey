@@ -7,7 +7,7 @@ import (
 
 const bk = "\x13\xD2\x09\x76\xD6\x3E\xA5\xE8\x36\x03\x6E\xC8\xBC\x68\xD6\xEB"
 
-var path = filepath.Join("testdata", "SYSTEM")
+var path = filepath.Join("..", "testdata", "SYSTEM")
 
 func TestReadFile(t *testing.T) {
 	t.Run("Test ReadFile", func(t *testing.T) {

@@ -14,7 +14,7 @@ import (
 	"fmt"
 	"os"
 
-	"go.foxforensics.dev/bootkey/pkg/bootkey"
+	"go.foxforensics.dev/bootkey/bootkey"
 )
 
 func main() {
